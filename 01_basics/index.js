@@ -15,7 +15,7 @@ const password = "1234";
 
 gender = "male"; // you can store values like this too but it's not a good practice or suggested.
 
-console.table([namee, email, password, gender]);
+// console.table([namee, email, password, gender]);
 
 
 
@@ -64,3 +64,57 @@ JavaScript uses two main areas for memory:
           => slower access.
 
 */
+
+
+/*
+
+Topic - 4, ---- String,Number and some of methods ----
+1. literal values `${something}` 
+.*/
+
+// let nameee = "john";
+// let age = "21";
+
+// console.log(`Hello ${nameee} you're ${age} year old.`);
+
+let word = new String("beautiful");
+
+// console.log(word);
+// console.log(word[2]);
+// console.log(word.__proto__);
+
+/*
+you can access all the prototype methods after . but in browser.
+*/
+
+//  --- NUMBER --- 
+const cash = 1000000;
+// console.log(cash.toLocaleString('en-IN'));
+
+// console.log(Math);
+// console.log(Math.round(4.4)); // 4
+// console.log(Math.round(4.6)); // 5
+// console.log(Math.ceil(4.2)); // 5
+// console.log(Math.floor(4.9)); // 4
+// console.log(Math.min(8,3,75,30,)); // 3
+// console.log(Math.max(8,3,75,30,)); // 75
+
+
+//  ------------- RANDOM ------------------
+
+// console.log(Math.random()); // 0.3153220287784675
+    // the value in random is always in between 0-1.
+
+// console.log(Math.random()*10) //3.153220287784675 , 0.2716093396670183
+    // its just multiply the output with 10 (decimal shifts by 1).
+
+// console.log(Math.floor((Math.random()*10) + 1));
+    // we use floor here to avoid answer in decimal.
+    // output is not less than 1 because we added 1
+
+const min = 10;
+const max = 20;
+
+// if there's situation where min & max digits are given and you want a random number between them then this is the formula that's works always.
+
+console.log(Math.floor(Math.random() * ( max-min + 1) + min));
